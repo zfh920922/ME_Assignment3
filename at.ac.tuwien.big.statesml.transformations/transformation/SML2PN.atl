@@ -1,0 +1,17 @@
+-- @path SML=/at.ac.tuwien.big.statesml.transformations/metamodels/statesml.ecore
+-- @nsURI PN=http://org.pnml.tools/epnk/pnmlcoremodel
+
+module SML2PN;
+create OUT : PN from IN : SML;
+
+rule StateSys2PN {
+	from
+		i1 : SML!StateSystem
+	to 
+		o0 : PN!PetriNetDoc(
+			net <- o1	
+		),
+		o1 : PN!PetriNet(
+			id <- 'PN1'
+		)
+}
