@@ -21,8 +21,18 @@ rule StateSys2PN {
 		),
     	p : PN!Page(
     	    name<- n2,
-    	    object<- i1.nodes-> union(i1.edges)
+    	    object<- i1.nodes-> union(i1.edges),
+    	    id<- 'P1'
+    	    
     	),
 		n2 : PN!Name(
 		    text<- 'MainPage')
+}
+
+rule State2Place {
+    from 
+        s : SML!State
+    to place : PN!Place (
+        id<- s.name		
+)
 }
