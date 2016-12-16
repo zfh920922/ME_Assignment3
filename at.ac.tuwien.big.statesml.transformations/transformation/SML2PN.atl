@@ -12,6 +12,17 @@ rule StateSys2PN {
 			net <- o1	
 		),
 		o1 : PN!PetriNet(
-			id <- 'PN1'
-		)
+			id <- 'PN2',
+			name <- n1,
+			page <- p
+		),
+		n1 : PN!Name(
+		    text<- i1.name    
+		),
+    	p : PN!Page(
+    	    name<- n2,
+    	    object<- i1.nodes-> union(i1.edges)
+    	),
+		n2 : PN!Name(
+		    text<- 'MainPage')
 }
