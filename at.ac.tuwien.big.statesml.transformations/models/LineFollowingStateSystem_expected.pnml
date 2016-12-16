@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+<pnml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns="http://www.pnml.org/version-2009/grammar/pnml">
   <net id="PN1">
     <name>
       <text>SimpleLineFollowing</text>
@@ -8,70 +8,466 @@
       <name>
         <text>MainPage</text>
       </name>
+      <toolspecific tool="org.pnml.tools.epnk.diagraminfo" version="0.9.2">
+        <diagram visible="true" type="PNMLCoreModel" element="P1" name="MainPage" measurementUnit="Pixel">
+          <children visible="true" type="2001" element="initialstep">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="36" y="528" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.0">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.0"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="24" y="432" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2001" element="followingline">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="552" y="132" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.1">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.1"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="528" y="24" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2001" element="terminalstep">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="264" y="528" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.2">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.2"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="348" y="432" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2001" element="reversing">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="600" y="528" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.3">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.3"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="588" y="432" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2003" element="followline">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="324" y="624" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.4">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.4"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="144" y="528" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2001" element="convergetofollowline">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="480" y="732" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.5">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.5"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="132" y="624" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2001" element="divergeafterfollowline">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="384" y="336" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.6">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.6"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="336" y="228" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2003" element="terminate">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="252" y="432" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.7">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.7"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="240" y="336" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2003" element="reverse">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="492" y="432" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.8">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.8"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="480" y="336" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2003" element="repeatfollowlineafterreversing">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="480" y="624" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.9">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004" element="//@net.0/@page.0/@labelproxy.9"/>
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="16777215" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="360" y="528" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2003" element="AddTran4SD_DivergeAfterFollowLine">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="528" y="228" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2003" element="AddTran4SC_ConvergeToFollowLine">
+            <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="672" y="24" width="-1" height="-1"/>
+          </children>
+          <styles xsi:type="notation:DiagramStyle" pageX="0" pageY="0" pageWidth="100" pageHeight="100" description=""/>
+          <edges visible="true" type="4001" element="InitialStepTOFollowLine" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.0" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.8">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -277, -60]$[277, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.325,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="FollowLineTOConvergeToFollowLine" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.8" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.10">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -150, -60]$[150, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.325,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="FollowingLineTODivergeAfterFollowLine" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.2" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.20">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 20, -60]$[-20, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="DivergeAfterFollowLineTOTerminate" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.12" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.14">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 115, -60]$[-115, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.325,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.75,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="TerminateTOTerminalStep" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.14" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.4">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.675,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="DivergeAfterFollowLineTOReverse" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.12" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.16">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -87, -60]$[87, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.65,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.25,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="ReverseTOReversing" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.16" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.6">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -107, -60]$[107, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.25,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="ReversingTORepeatFollowLineAfterReversing" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.6" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.18">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 114, -60]$[-114, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.75,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="RepeatFollowLineAfterReversingTOConvergeToFollowLine" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.18" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.10">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="ConvergeToFollowLineTOFollowingLine" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.21" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.2">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 98, -60]$[-98, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.225,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.75,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="AddArc4SD_DivergeAfterFollowLine" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.20" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.12">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 136, -60]$[-136, 60, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.75,0.0)"/>
+          </edges>
+          <edges visible="true" type="4001" element="AddArc4SC_ConvergeToFollowLine" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.10" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.21">
+            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -178, 660]$[178, -161, 0, 499]$[178, -660, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.75,0.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.475,1.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.1" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.0" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, -87]$[0, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.3" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.2" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, -87]$[0, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.5" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.4" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 100, -87]$[-100, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.49333333333333335,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.75,0.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.7" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.6" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, -87]$[0, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.6491228070175439,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.9" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.8" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -180, -87]$[45, 26, -135, -61]$[180, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.65,0.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.11" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.10" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -287, -87]$[287, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.49606299212598426,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.15,0.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.13" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.12" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, -87]$[0, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.15" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.14" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, -87]$[0, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.49122807017543857,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.17" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.16" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, -87]$[0, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.19" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.18" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Ubuntu" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 0, -87]$[0, 87, 0, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7621621621621621,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+          </edges>
+        </diagram>
+        <labelProxy label="//@net.0/@page.0/@object.0/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.1/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.2/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.3/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.4/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.5/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.6/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.7/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.8/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.9/@name"/>
+      </toolspecific>
       <place id="initialstep">
         <name>
+          <graphics>
+            <offset x="-32.0" y="-116.0"/>
+          </graphics>
           <text>InitialStep</text>
         </name>
+        <graphics>
+          <position x="56.0" y="548.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </place>
       <place id="followingline">
         <name>
+          <graphics>
+            <offset x="-44.0" y="-128.0"/>
+          </graphics>
           <text>FollowingLine</text>
         </name>
+        <graphics>
+          <position x="572.0" y="152.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </place>
       <place id="terminalstep">
         <name>
+          <graphics>
+            <offset x="64.0" y="-116.0"/>
+          </graphics>
           <text>TerminalStep</text>
         </name>
+        <graphics>
+          <position x="284.0" y="548.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </place>
       <place id="reversing">
         <name>
+          <graphics>
+            <offset x="-32.0" y="-116.0"/>
+          </graphics>
           <text>Reversing</text>
         </name>
+        <graphics>
+          <position x="620.0" y="548.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </place>
       <transition id="followline">
         <name>
+          <graphics>
+            <offset x="-200.0" y="-116.0"/>
+          </graphics>
           <text>FollowLine</text>
         </name>
+        <graphics>
+          <position x="344.0" y="644.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </transition>
       <place id="convergetofollowline">
         <name>
+          <graphics>
+            <offset x="-368.0" y="-128.0"/>
+          </graphics>
           <text>ConvergeToFollowLine</text>
         </name>
+        <graphics>
+          <position x="500.0" y="752.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </place>
       <place id="divergeafterfollowline">
         <name>
+          <graphics>
+            <offset x="-68.0" y="-128.0"/>
+          </graphics>
           <text>DivergeAfterFollowLine</text>
         </name>
+        <graphics>
+          <position x="404.0" y="356.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </place>
       <transition id="terminate">
         <name>
+          <graphics>
+            <offset x="-32.0" y="-116.0"/>
+          </graphics>
           <text>Terminate</text>
         </name>
+        <graphics>
+          <position x="272.0" y="452.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </transition>
       <transition id="reverse">
         <name>
+          <graphics>
+            <offset x="-32.0" y="-116.0"/>
+          </graphics>
           <text>Reverse</text>
         </name>
+        <graphics>
+          <position x="512.0" y="452.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </transition>
       <transition id="repeatfollowlineafterreversing">
         <name>
+          <graphics>
+            <offset x="-140.0" y="-116.0"/>
+          </graphics>
           <text>RepeatFollowLineAfterReversing</text>
         </name>
+        <graphics>
+          <position x="500.0" y="644.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
       </transition>
-      <arc id="InitialStepTOFollowLine" source="initialstep" target="followline"/>
-      <arc id="FollowLineTOConvergeToFollowLine" source="followline" target="convergetofollowline"/>
-      <arc id="FollowingLineTODivergeAfterFollowLine" source="followingline" target="AddTran4SD_DivergeAfterFollowLine"/>
-      <arc id="DivergeAfterFollowLineTOTerminate" source="divergeafterfollowline" target="terminate"/>
-      <arc id="TerminateTOTerminalStep" source="terminate" target="terminalstep"/>
-      <arc id="DivergeAfterFollowLineTOReverse" source="divergeafterfollowline" target="reverse"/>
-      <arc id="ReverseTOReversing" source="reverse" target="reversing"/>
-      <arc id="ReversingTORepeatFollowLineAfterReversing" source="reversing" target="repeatfollowlineafterreversing"/>
-      <arc id="RepeatFollowLineAfterReversingTOConvergeToFollowLine" source="repeatfollowlineafterreversing" target="convergetofollowline"/>
-      <arc id="ConvergeToFollowLineTOFollowingLine" source="AddTran4SC_ConvergeToFollowLine" target="followingline"/>
-      <arc id="AddArc4SD_DivergeAfterFollowLine" source="AddTran4SD_DivergeAfterFollowLine" target="divergeafterfollowline"/>
-      <transition id="AddTran4SD_DivergeAfterFollowLine"/>
-      <arc id="AddArc4SC_ConvergeToFollowLine" source="convergetofollowline" target="AddTran4SC_ConvergeToFollowLine"/>
-      <transition id="AddTran4SC_ConvergeToFollowLine"/>
+      <arc id="InitialStepTOFollowLine" source="initialstep" target="followline">
+        <graphics>
+          <position x="56.0" y="548.0"/>
+          <position x="333.0" y="608.0"/>
+        </graphics>
+      </arc>
+      <arc id="FollowLineTOConvergeToFollowLine" source="followline" target="convergetofollowline">
+        <graphics>
+          <position x="344.0" y="644.0"/>
+          <position x="494.0" y="704.0"/>
+        </graphics>
+      </arc>
+      <arc id="FollowingLineTODivergeAfterFollowLine" source="followingline" target="AddTran4SD_DivergeAfterFollowLine">
+        <graphics>
+          <position x="572.0" y="152.0"/>
+          <position x="552.0" y="212.0"/>
+        </graphics>
+      </arc>
+      <arc id="DivergeAfterFollowLineTOTerminate" source="divergeafterfollowline" target="terminate">
+        <graphics>
+          <position x="404.0" y="356.0"/>
+          <position x="289.0" y="416.0"/>
+        </graphics>
+      </arc>
+      <arc id="TerminateTOTerminalStep" source="terminate" target="terminalstep">
+        <graphics>
+          <position x="272.0" y="452.0"/>
+          <position x="272.0" y="512.0"/>
+        </graphics>
+      </arc>
+      <arc id="DivergeAfterFollowLineTOReverse" source="divergeafterfollowline" target="reverse">
+        <graphics>
+          <position x="404.0" y="356.0"/>
+          <position x="491.0" y="416.0"/>
+        </graphics>
+      </arc>
+      <arc id="ReverseTOReversing" source="reverse" target="reversing">
+        <graphics>
+          <position x="512.0" y="452.0"/>
+          <position x="619.0" y="512.0"/>
+        </graphics>
+      </arc>
+      <arc id="ReversingTORepeatFollowLineAfterReversing" source="reversing" target="repeatfollowlineafterreversing">
+        <graphics>
+          <position x="620.0" y="548.0"/>
+          <position x="506.0" y="608.0"/>
+        </graphics>
+      </arc>
+      <arc id="RepeatFollowLineAfterReversingTOConvergeToFollowLine" source="repeatfollowlineafterreversing" target="convergetofollowline">
+        <graphics>
+          <position x="500.0" y="644.0"/>
+          <position x="500.0" y="704.0"/>
+        </graphics>
+      </arc>
+      <arc id="ConvergeToFollowLineTOFollowingLine" source="AddTran4SC_ConvergeToFollowLine" target="followingline">
+        <graphics>
+          <position x="692.0" y="44.0"/>
+          <position x="594.0" y="104.0"/>
+        </graphics>
+      </arc>
+      <arc id="AddArc4SD_DivergeAfterFollowLine" source="AddTran4SD_DivergeAfterFollowLine" target="divergeafterfollowline">
+        <graphics>
+          <position x="548.0" y="248.0"/>
+          <position x="412.0" y="308.0"/>
+        </graphics>
+      </arc>
+      <transition id="AddTran4SD_DivergeAfterFollowLine">
+        <graphics>
+          <position x="548.0" y="248.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <arc id="AddArc4SC_ConvergeToFollowLine" source="convergetofollowline" target="AddTran4SC_ConvergeToFollowLine">
+        <graphics>
+          <position x="500.0" y="752.0"/>
+          <position x="678.0" y="591.0"/>
+          <position x="678.0" y="92.0"/>
+        </graphics>
+      </arc>
+      <transition id="AddTran4SC_ConvergeToFollowLine">
+        <graphics>
+          <position x="692.0" y="44.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
     </page>
   </net>
 </pnml>

@@ -22,31 +22,108 @@ rule StateSys2PN {
     	p : PN!Page(
     	    name<- n2,
     	    object<- i1.nodes-> union(i1.edges),
-    	    id<- 'P1'
-    	    
+    	    id<- 'P1' 
     	),
 		n2 : PN!Name(
 		    text<- 'MainPage')
 }
 
-rule State2Place {
+rule State2Place --extends DynamicEObject2Object
+{
     from 
-        s : SML!State
-    to place : PN!Place (
-        id<- s.name		
+    state : SML!State  
+    to 
+    place : PN!Place ( 
+         id<- state.name.toLowerCase(),
+         "in"<- state.getEdgesIncoming(),
+         out<- state.getEdgesOutgoing(),   
+         name<- thisModule.getName(state) 
 )
 }
 
-rule Transition2Transtition {
+rule Transition2Transtition --extends DynamicEObject2Object
+{
     from 
         t : SML!Transition
-    to tn : PN!Transition (
-        id<- t.name	)
+    to 
+    tn : PN!Transition (
+        id<- t.name.toLowerCase(),
+        "in"<- t.incomingEdges,
+        out<- t.outgoingEdges,
+        name<- thisModule.getName(t)
+      )
 }
 
 rule Edge2Arc {
     from 
-        e : SML!Edge
-    to a : PN!Arc (
-        id<- e.name	)
+    edge : SML!Edge
+    to 
+    a : PN!Arc (
+    id<- edge.name.toLowerCase()
+    --source<- edge.source,
+    --target<- edge.target
+    )
 }
+
+--abstract rule DynamicEObject2Object{
+--from 
+--nodesml : ecore!EObject
+--to 
+--node : PN!Node()
+--}
+
+rule Convergence2PN --extends DynamicEObject2Object
+{
+from 
+sc : SML!SelectionConvergence
+to
+pc : PN!Place(
+name<- thisModule.getName(sc),
+id<- sc.name,
+"in"<- sc.incomingEdges,
+out<- sc.outgoingEdges->collect(e | thisModule.getconvergence(e))
+)
+}
+
+lazy rule getconvergence {
+    from 
+    ecvg : SML!Edge
+    to
+     arccvg1 : PN!Arc(
+     source<- ecvg.source,
+     target<- tcvg
+   ),  
+    tcvg : PN!Transition(
+   --id<- getSelectionCDName(),
+   --name<- selectionCName,
+   "in"<- arccvg1,
+   out<- arccvg2
+),
+arccvg2 : PN!Arc(
+   source<- tcvg,
+   target<- ecvg.target
+   )
+}
+
+lazy rule getName {
+    from
+    i: ecore!EObject
+    to
+    namesml : PN!Name(
+      text<- i.name    
+    )
+}
+
+helper context SML!State def : getEdgesIncoming () : OrderedSet(SML!Edge) = 
+    if self.initial
+    then OrderedSet{}
+    else 
+    self.incomingEdges
+    endif;
+
+helper context SML!State def : getEdgesOutgoing () : OrderedSet(SML!Edge) = 
+    if self.terminal
+    then OrderedSet{}
+    else 
+    self.outgoingEdges
+    endif;

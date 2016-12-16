@@ -1,0 +1,42 @@
+helper context SML!State def : getEdgesIncoming () : OrderedSet(SML!Edge) = 
+    if self.initial
+    then OrderedSet{}
+    else 
+    self.incomingEdges
+    endif;
+
+helper context SML!State def : getEdgesOutgoing () : OrderedSet(SML!Edge) = 
+    if self.terminal
+    then OrderedSet{}
+    else 
+    self.outgoingEdges
+    endif;
+  
+  
+   --  "in"<- state.getEdgesIncoming(),
+        --   out<- state.getEdgesOutgoing()  
+        
+        
+          -- "in"<- t.incomingEdges,
+         --  out<- t.outgoingEdges
+         
+         
+          --  source<- edge.source,
+ --   target<- edge.target
+ 
+ 
+ --rule SelectionDivergence2PlaceWithTransition {
+   -- from 
+      --  sd : SML!SelectionDivergence
+   -- to 
+     --   psd : PN!Place (
+      --  id<- sd.name,
+       -- out<- t,
+      --  in<- sd.incomingedge
+     --   )
+     --   t : PN!Transition (
+            
+     --   )
+        
+
+--}

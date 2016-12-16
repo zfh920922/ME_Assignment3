@@ -8,24 +8,61 @@
       <name>
         <text>MainPage</text>
       </name>
-      <place id="InitialStep"/>
-      <place id="FollowingLine"/>
-      <place id="TerminalStep"/>
-      <place id="Reversing"/>
-      <transition id="FollowLine"/>
-      <transition id="Terminate"/>
-      <transition id="Reverse"/>
-      <transition id="RepeatFollowLineAfterReversing"/>
-      <arc id="InitialStepTOFollowLine"/>
-      <arc id="FollowLineTOConvergeToFollowLine"/>
-      <arc id="FollowingLineTODivergeAfterFollowLine"/>
-      <arc id="DivergeAfterFollowLineTOTerminate"/>
-      <arc id="TerminateTOTerminalStep"/>
-      <arc id="DivergeAfterFollowLineTOReverse"/>
-      <arc id="ReverseTOReversing"/>
-      <arc id="ReversingTORepeatFollowLineAfterReversing"/>
-      <arc id="RepeatFollowLineAfterReversingTOConvergeToFollowLine"/>
-      <arc id="ConvergeToFollowLineTOFollowingLine"/>
+      <place id="initialstep">
+        <name>
+          <text>InitialStep</text>
+        </name>
+      </place>
+      <place id="followingline">
+        <name>
+          <text>FollowingLine</text>
+        </name>
+      </place>
+      <place id="terminalstep">
+        <name>
+          <text>TerminalStep</text>
+        </name>
+      </place>
+      <place id="reversing">
+        <name>
+          <text>Reversing</text>
+        </name>
+      </place>
+      <transition id="followline">
+        <name>
+          <text>FollowLine</text>
+        </name>
+      </transition>
+      <place id="ConvergeToFollowLine">
+        <name>
+          <text>ConvergeToFollowLine</text>
+        </name>
+      </place>
+      <transition id="terminate">
+        <name>
+          <text>Terminate</text>
+        </name>
+      </transition>
+      <transition id="reverse">
+        <name>
+          <text>Reverse</text>
+        </name>
+      </transition>
+      <transition id="repeatfollowlineafterreversing">
+        <name>
+          <text>RepeatFollowLineAfterReversing</text>
+        </name>
+      </transition>
+      <arc id="initialsteptofollowline" source="initialstep" target="followline"/>
+      <arc id="followlinetoconvergetofollowline" source="followline" target="ConvergeToFollowLine"/>
+      <arc id="followinglinetodivergeafterfollowline" source="followingline"/>
+      <arc id="divergeafterfollowlinetoterminate" target="terminate"/>
+      <arc id="terminatetoterminalstep" source="terminate" target="terminalstep"/>
+      <arc id="divergeafterfollowlinetoreverse" target="reverse"/>
+      <arc id="reversetoreversing" source="reverse" target="reversing"/>
+      <arc id="reversingtorepeatfollowlineafterreversing" source="reversing" target="repeatfollowlineafterreversing"/>
+      <arc id="repeatfollowlineafterreversingtoconvergetofollowline" source="repeatfollowlineafterreversing" target="ConvergeToFollowLine"/>
+      <arc id="convergetofollowlinetofollowingline" target="followingline"/>
     </page>
   </net>
 </pnml>
