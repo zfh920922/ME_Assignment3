@@ -36,3 +36,17 @@ rule State2Place {
         id<- s.name		
 )
 }
+
+rule Transition2Transtition {
+    from 
+        t : SML!Transition
+    to tn : PN!Transition (
+        id<- t.name	)
+}
+
+rule Edge2Arc {
+    from 
+        e : SML!Edge
+    to a : PN!Arc (
+        id<- e.name	)
+}
