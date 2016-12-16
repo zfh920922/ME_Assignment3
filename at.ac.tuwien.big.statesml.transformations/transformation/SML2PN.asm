@@ -82,7 +82,7 @@
 		<constant value="6"/>
 		<constant value="7"/>
 		<constant value="net"/>
-		<constant value="PN2"/>
+		<constant value="PN1"/>
 		<constant value="id"/>
 		<constant value="page"/>
 		<constant value="text"/>
