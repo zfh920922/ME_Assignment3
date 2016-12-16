@@ -38,5 +38,19 @@ helper context SML!State def : getEdgesOutgoing () : OrderedSet(SML!Edge) =
             
      --   )
         
-
+ arccvg1 : PN!Arc(
+     id<- 'aaaaaa',
+     source<- ecvg.source,
+     target<- tcvg
+   ),
+    tcvg : PN!Transition(
+    id<- ecvg.source.gettransitioncvgName(),
+   --name<- selectionCName,
+   "in"<- arccvg1,
+   out<- arccvg2
+),
+arccvg2 : PN!Arc(
+   source<- tcvg,
+   target<- ecvg.target
+   ),
 --}

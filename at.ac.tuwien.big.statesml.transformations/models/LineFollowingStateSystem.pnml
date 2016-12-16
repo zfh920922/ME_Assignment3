@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
-  <net id="PN1">
+  <net id="PN1deee">
     <name>
       <text>SimpleLineFollowing</text>
     </name>
@@ -33,7 +33,7 @@
           <text>FollowLine</text>
         </name>
       </transition>
-      <place id="ConvergeToFollowLine">
+      <place id="convergetofollowline">
         <name>
           <text>ConvergeToFollowLine</text>
         </name>
@@ -53,16 +53,14 @@
           <text>RepeatFollowLineAfterReversing</text>
         </name>
       </transition>
-      <arc id="initialsteptofollowline" source="initialstep" target="followline"/>
-      <arc id="followlinetoconvergetofollowline" source="followline" target="ConvergeToFollowLine"/>
+      <arc id="initialsteptofollowline" source="initialstep"/>
+      <arc id="followlinetoconvergetofollowline" source="followline" target="convergetofollowline"/>
       <arc id="followinglinetodivergeafterfollowline" source="followingline"/>
-      <arc id="divergeafterfollowlinetoterminate" target="terminate"/>
       <arc id="terminatetoterminalstep" source="terminate" target="terminalstep"/>
-      <arc id="divergeafterfollowlinetoreverse" target="reverse"/>
-      <arc id="reversetoreversing" source="reverse" target="reversing"/>
-      <arc id="reversingtorepeatfollowlineafterreversing" source="reversing" target="repeatfollowlineafterreversing"/>
-      <arc id="repeatfollowlineafterreversingtoconvergetofollowline" source="repeatfollowlineafterreversing" target="ConvergeToFollowLine"/>
-      <arc id="convergetofollowlinetofollowingline" target="followingline"/>
+      <arc id="reversetoreversing" source="reverse"/>
+      <arc id="reversingtorepeatfollowlineafterreversing" source="reversing"/>
+      <arc id="repeatfollowlineafterreversingtoconvergetofollowline" source="repeatfollowlineafterreversing" target="convergetofollowline"/>
+      <transition id="AddTrn4SC_ConvergeToFollowLine"/>
     </page>
   </net>
 </pnml>

@@ -12,7 +12,7 @@ rule StateSys2PN {
 			net <- o1	
 		),
 		o1 : PN!PetriNet(
-			id <- 'PN1',
+			id <- 'PN1deee',
 			name <- n1,
 			page <- p
 		),
@@ -28,15 +28,39 @@ rule StateSys2PN {
 		    text<- 'MainPage')
 }
 
-rule State2Place --extends DynamicEObject2Object
+rule State2Placeinitial --extends DynamicEObject2Object
 {
     from 
-    state : SML!State  
+    state : SML!State (state.initial = true)
     to 
     place : PN!Place ( 
          id<- state.name.toLowerCase(),
-         "in"<- state.getEdgesIncoming(),
-         out<- state.getEdgesOutgoing(),   
+         out<- state.outgoingEdges,   
+         name<- thisModule.getName(state) 
+)
+}
+
+rule State2Placeterminal --extends DynamicEObject2Object
+{
+    from 
+    state : SML!State (state.terminal = true)
+    to 
+    place : PN!Place ( 
+         id<- state.name.toLowerCase(),
+         "in"<- state.incomingEdges,
+         name<- thisModule.getName(state) 
+)
+}
+
+rule State2Placenormal --extends DynamicEObject2Object
+{
+    from 
+    state : SML!State (state.terminal = false and state.initial = false)
+    to 
+    place : PN!Place ( 
+         id<- state.name.toLowerCase(),
+        -- "in"<- state.incomingEdges,
+          --out<- state.outgoingEdges,
          name<- thisModule.getName(state) 
 )
 }
@@ -48,7 +72,7 @@ rule Transition2Transtition --extends DynamicEObject2Object
     to 
     tn : PN!Transition (
         id<- t.name.toLowerCase(),
-        "in"<- t.incomingEdges,
+        --"in"<- t.incomingEdges,
         out<- t.outgoingEdges,
         name<- thisModule.getName(t)
       )
@@ -56,11 +80,11 @@ rule Transition2Transtition --extends DynamicEObject2Object
 
 rule Edge2Arc {
     from 
-    edge : SML!Edge
+    edge : SML!Edge (not edge.source.oclIsTypeOf(SML!SelectionConvergence) and not edge.source.oclIsTypeOf(SML!SelectionDivergence))
     to 
     a : PN!Arc (
-    id<- edge.name.toLowerCase()
-    --source<- edge.source,
+    id<- edge.name.toLowerCase(),
+    source<- edge.source--,
     --target<- edge.target
     )
 }
@@ -79,28 +103,31 @@ sc : SML!SelectionConvergence
 to
 pc : PN!Place(
 name<- thisModule.getName(sc),
-id<- sc.name,
-"in"<- sc.incomingEdges,
-out<- sc.outgoingEdges->collect(e | thisModule.getconvergence(e))
+id<- sc.name.toLowerCase(),
+"in"<- sc.incomingEdges--,
+--out<- sc.outgoingEdges
 )
 }
 
-lazy rule getconvergence {
+rule convergenceOutgoingEdge2Arc {
     from 
-    ecvg : SML!Edge
+    ecvg : SML!Edge(ecvg.source.oclIsTypeOf(SML!SelectionConvergence))
     to
-     arccvg1 : PN!Arc(
-     source<- ecvg.source,
-     target<- tcvg
-   ),  
-    tcvg : PN!Transition(
-   --id<- getSelectionCDName(),
+   t : PN!Transition(
+   id<- ecvg.source.gettransitioncvgName(),
    --name<- selectionCName,
-   "in"<- arccvg1,
-   out<- arccvg2
+    "in"<- arccvg,
+   out<- arccvgg
 ),
-arccvg2 : PN!Arc(
-   source<- tcvg,
+    arccvg : PN!Arc(
+     id<- 'aaaaaa',
+     source<- ecvg.source,
+     target<- t
+   ),
+ 
+   arccvgg : PN!Arc(
+   source<- t,
+   id<- 'bbbb',
    target<- ecvg.target
    )
 }
@@ -114,16 +141,6 @@ lazy rule getName {
     )
 }
 
-helper context SML!State def : getEdgesIncoming () : OrderedSet(SML!Edge) = 
-    if self.initial
-    then OrderedSet{}
-    else 
-    self.incomingEdges
-    endif;
 
-helper context SML!State def : getEdgesOutgoing () : OrderedSet(SML!Edge) = 
-    if self.terminal
-    then OrderedSet{}
-    else 
-    self.outgoingEdges
-    endif;
+helper context SML!SelectionConvergence def : gettransitioncvgName () : String = 
+    'AddTrn4SC_'+self.name;
